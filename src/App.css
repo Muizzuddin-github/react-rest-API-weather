@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+/* responsive break point*/
+/* responsive mobile */
+
+.App header .navbar .container-fluid .navbar-brand{
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Introduction */
+.container article{
+  width: 80%;
+}
+.container article small{
+  display: inline-block;
+  margin-top: -10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Search */
+section .input-group{
+  width: 100%;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+/* Weather */
+.resLaptop .viewWeather{
+  width: 100%;
+}
+
+.resLaptop .viewWeather .infoWeather{
+  height: 39vh;
+  width: 100%;
+  border-radius: 0px;
+}
+
+.resLaptop .viewWeather .infoWeather .weather{
+  padding: 10px;
+  background-color: #5de3f5;
+  height: 39vh;
+}
+
+.resLaptop .viewWeather .infoWeather .weather .body{
+  margin-top: -10px;
+}
+
+.resLaptop .viewWeather .infoWeather .weather .body .card-text{
+  margin-bottom: 0px;
+}
+
+
+
+/* Footer */
+
+footer{
+  color: white;
+  padding: 10px;
+}
+
+footer a{
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+/* responsive Komputer*/
+
+@media screen and ( min-width: 756px) {
+  .resLaptop{
+    padding: 10px;
+    display: flex;
+    height: 93vh;
+  }
+  .resLaptop .container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .resLaptop .container section{
+    margin-left: -90px;
+    margin-top: -90px;
+  }
+  .resLaptop .viewWeather{
+    width: 50%;
+  }
+
+  footer{
+    display: none;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.viewWeather{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.viewWeather .infoWeather{
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
 }
